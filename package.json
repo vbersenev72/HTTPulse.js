@@ -1,0 +1,23 @@
+{
+  "name": "httpulse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "http",
+    "https",
+    "server",
+    "framework",
+    "rest",
+    "api",
+    "httpulse"
+  ]
+}
