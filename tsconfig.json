@@ -1,8 +1,20 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "outDir": "./dist",
-    "strict": true
+    "target": "esnext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    "jsx": "react",
+    "lib": ["esnext"],
+    "module": "CommonJS",
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "sourceRoot": "src",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   }
 }

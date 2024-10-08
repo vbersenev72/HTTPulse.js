@@ -1,16 +1,22 @@
 {
   "name": "httpulse",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "bash scripts/dev.sh",
+    "start": "bash scripts/start.sh",
+    "build": "bash scripts/build.sh"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "author": {
+    "name": "Vladislav Bersenev",
+    "email": "vbersenev72@gmail.com",
+    "url": "https://vbersenev72.ru"
+  },
   "devDependencies": {
-    "@types/node": "^20.12.7",
-    "@types/qs": "^6.9.15",
-    "typescript": "^5.4.5"
+    "@types/node": "^20.10.4",
+    "typescript": "^5.3.3"
   },
   "keywords": [
     "http",
@@ -19,9 +25,15 @@
     "framework",
     "rest",
     "api",
-    "httpulse"
+    "httpulse",
+    "nodejs",
+    "backend",
+    "crud",
+    "server",
+    "node.js"
   ],
-  "dependencies": {
-    "qs": "^6.12.1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vbersenev72/HTTPulse.js"
   }
 }
