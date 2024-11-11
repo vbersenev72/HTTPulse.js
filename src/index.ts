@@ -8,6 +8,7 @@ import Response from "./entities/Response";
 
 import {Handler, HttpMethod, Middleware} from "./types";
 import corsMW from "./utils/corsMW";
+import { logHandlers } from "./utils/logs";
 
 export default class HTTPulse {
 
@@ -87,8 +88,13 @@ export default class HTTPulse {
   }
 
   /* Start HTTP server function */
-  start() {
+  start(
+    options? : {
+      enableLogHandlers: boolean
+    }
+  ) {
     return new Promise<void>((done) => {
+      if (options?.enableLogHandlers) logHandlers(this.handlers)
       this.server.listen(this.port, this.host, () => done());
     });
   }

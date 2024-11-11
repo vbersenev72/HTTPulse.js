@@ -29,7 +29,9 @@ HTTPulseServer.on('POST', '/', async (ctx: Context) => {
   return new Response(200, 'Hello World');
 });
 
-HTTPulseServer.start().then(() => {
+HTTPulseServer.start({
+    enableLogHandlers: true
+  }).then(() => {
   console.log(`HTTP server started at http://${HTTP_SERVER_HOST}:${HTTP_SERVER_PORT}`);
 });
 ```
